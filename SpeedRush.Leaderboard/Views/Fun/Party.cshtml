@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Party";
+}
+
+<h1>Party</h1>
+
+<div class="text-center">
+    <h3 class="display-4">Party Time</h3>
+    <p>We love having parties because a party is so much fun!</p>
+</div>
+
+@{
+    for (var i = 10; i > 0; i--)
+    {
+        @Html.Raw("<div class='text-center'>Time till party: " + i + " seconds!</div>");
+    }
+
+}
